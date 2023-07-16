@@ -2,19 +2,18 @@
 #include <unistd.h>
 /**
  * main - Enrtry Point
+ *
+ *
  * Return: (Success)
  */
 int main(void)
 {
-	char alpha, e, q;
+	char c;
 
-	e = 'e';
-	q = 'q';
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-			if (alpha != e && alpha != q)
-				putchar(alpha);
+			if ((c == 'q' || c == 'e') != 1)
+				putchar(c);
 	}
 	putchar('\n');
 	return (0);
