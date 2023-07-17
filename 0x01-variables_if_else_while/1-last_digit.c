@@ -2,9 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - Entry Point
- * Description: This programe assigns a random number to the variable n each time it is executednand prints thae last digit of the number sorted in the variable n.
- * 
+ * main - Entry Point 
  * Return: 0
  */
 int main(void)
