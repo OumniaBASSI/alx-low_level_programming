@@ -1,9 +1,12 @@
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+
 /**
- * main - Entry Point 
- * Return: 0
+ * main - Entry Point
+ *
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -15,7 +18,7 @@ int main(void)
 
 	lastDigit = n % 10;
 
-	printf("Last digit of %d id %d ", n, lastDigit);
+	printf("Last digit of %d is %d ", n, lastDigit);
 
 	if (lastDigit > 5)
 		printf("and is greater than 5 \n");
