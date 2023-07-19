@@ -2,7 +2,7 @@
 /**
  * print_sign - check input if its positive, negative or zero
  * @n: variable to determine if input is greater than, less than or is zero
- * Retiurn: 0 if succesful
+ * Return: 0 if succesful
  */
 int print_sign(int n)
 {
