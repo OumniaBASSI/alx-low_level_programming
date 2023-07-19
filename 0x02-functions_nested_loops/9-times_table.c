@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * time_table - Entry point
+ * timse_table - Entry point
  */
-void time_table(void)
+void times_table(void)
 {
-	int i,j,p;
+	int i, j, p;
 
 	for (i = 0; i < 10; i++)
 	{
