@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * timse_table - Entry point
+ * times_table - Entry point
  */
 void times_table(void)
 {
@@ -18,7 +18,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(p +'0');
+				_putchar(p + '0');
 			}
 			if (p >= 10)
 			{
