@@ -1,20 +1,26 @@
 #include "main.h"
 /**
- * *_strcpy - Entry Function
- * @dest: char
- * @src: char
- * Return: dest
+ * _atoi - Entry Function
+ * @str: char
+ * Return: the int converted from string
  */
-char *_strcpy(char *dest, char *src)
+int _atoi(char *str)
 {
-	int i;
+	int sign, i;
+	unsigned int res;
 
-	i = 0;
-	while (src[i] != '\0')
+	res = i = 0;
+	sign = 1;
+	while (!(str[i] <= '9' && str[i] >= '0') && str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (str[i] == '-')
+			sign *= -1;
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + str[i] - '0';
+		i++;
+	}
+	return (res * sign);
 }

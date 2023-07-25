@@ -2,7 +2,7 @@
 /**
  * *_strcpy - Entry Function
  * @dest: char
- * @stc: char
+ * @src: char
  * Return: dest
  */
 char *_strcpy(char *dest, char *src)

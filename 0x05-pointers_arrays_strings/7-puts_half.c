@@ -3,7 +3,7 @@
  * puts_half - Entry Function
  * @str: char
  */
-void putch_half(char *str)
+void puts_half(char *str)
 {
 	int index, half;
 
@@ -11,7 +11,7 @@ void putch_half(char *str)
 	while (str[index] != '\0')
 		index++;
 
-	half = index /2;
+	half = index / 2;
 	if (index % 2 == 1)
 		half++;
 	while (half < index)
@@ -21,6 +21,3 @@ void putch_half(char *str)
 	}
 	_putchar('\n');
 }
-
-
-
