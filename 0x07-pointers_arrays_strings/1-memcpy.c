@@ -6,7 +6,7 @@
  * @n: number of bytes to change
  * Return: change pointer
  */
-char *_memcpy(char*dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 

@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * strstr - Entry Function
+ * _strstr - Entry Function
  * @haystack: char
  * @needle: char
  * Return: haystack or NULL (SUCCESS)
  */
-char *strstr(char *haystacj, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
 

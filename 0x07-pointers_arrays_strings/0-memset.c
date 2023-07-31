@@ -6,7 +6,7 @@
  * @n: number of bytes to change
  * Return: changed pointer
  */
-char *_memset(char *s, char b,unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
