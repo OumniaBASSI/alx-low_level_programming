@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
- * _strpbrk - Entry function
+ * *_strpbrk - Entry function
  * @s: char
  * @accept: char
  * Return: s or NULL (Success)
