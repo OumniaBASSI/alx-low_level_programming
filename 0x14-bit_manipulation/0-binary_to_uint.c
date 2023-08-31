@@ -1,30 +1,21 @@
 #include "main.h"
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary.
+ * binary_to_uint - Entry Function
+ * @b: const char
+ * Return: res
  */
-void print_binary(unsigned long int n)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned long int mask = 1UL << ((sizeof(unsigned long int) * 8) - 1);
-	int started = 0;
+	unsigned int res = 0;
+	int i;
 
-	if (n == 0)
+	if (b == NULL)
+		return (0);
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		_putchar('0');
-		return;
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		res = (res << 1) + (b[i] - 48);
 	}
-
-	while (mask)
-	{
-		if (n & mask)
-		{
-			_putchar('1');
-			started = 1;
-		}
-		else if (started)
-		{
-			_putchar('0');
-		}
-		mask >>= 1;
-	}
+	return (res);
 }
