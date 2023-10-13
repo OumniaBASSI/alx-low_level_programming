@@ -7,9 +7,9 @@
  * Return: the nth node
  */
 
-dlisttint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistin_t *current = head;
+	dlistint_t *current = head;
 	unsigned int i;
 
 	for (i = 0; current; i++)
