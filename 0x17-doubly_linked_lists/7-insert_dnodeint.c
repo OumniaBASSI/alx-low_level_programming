@@ -1,26 +1,26 @@
 #include "lists.h"
 
 /**
- * add_adnoidint_end - adds a new node at the end
+ * add_dnodeint_end - adds a new node at the end
  * @head: head of double list
  * @n: new node
  * Return: the address of the new element, or NULL if it failed
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 /**
- * add_dnodeint - adds anew node at the beginning
+ * add_dnodeint -  adds a new node at the beginning
  * @head: head of double list
  * @n: new node
  * Return: the address of the new element, or NULL if it failed
  */
-dlistint_t *add_adnodeint(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 /**
- * insert_dnodeint_at_index - insearts a new
+ * insert_dnodeint_at_index -  inserts a new
  * node at a given position
  * @h: head of double list
  * @idx: index where to insert
  * @n: value to insert
- * @Return: address of the new node
+ * Return: address of the new node
  * or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -42,6 +42,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		if (i == idx - 1)
 			before = nav;
+
 		if (i == idx)
 		{
 			new->next = nav;
@@ -50,7 +51,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			new->prev = before;
 			return (new);
 		}
-		if (!nav->next && i +1 == idx)
+		if (!nav->next && i + 1 == idx)
 			return (add_dnodeint_end(h, n));
 		nav = nav->next;
 		i++;
